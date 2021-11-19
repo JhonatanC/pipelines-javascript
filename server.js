@@ -3,13 +3,13 @@
 const express = require('express');
 
 // Constants
-const PORT = 3000;
+const PORT = 8088;
 const HOST = '0.0.0.0';
 
 // App
 const app = express();
 app.get('/', (req, res) => {
-  res.send('Hola mundo con el Node.js');
+  res.send('Cambiando el puesto para que no choque con otros en uso');
 });
 
 var port = process.env.PORT||PORT;
